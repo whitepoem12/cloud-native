@@ -3,7 +3,7 @@ name: Java CI with Maven
 on: workflow_dispatch
 
 env:
-  IMAGE_NAME: cloud-sample
+  IMAGE_NAME: cloud-native-82265640
 
 jobs:
   build:
@@ -62,7 +62,7 @@ jobs:
     - name: Commit files
       run: |
           cd manifests
-          git config --global user.email "github-actions@github.com"
-          git config --global user.name "github-actions"
+          git config --global user.email "sungeun.yu@kt.com
+          git config --global user.name "Yoo"
           git commit -am "Update image tag"
           git push -u origin main
