@@ -1,7 +1,8 @@
 configMapGenerator:
 - files:
   - application.yml
-  name: cloud-sample-configmap
+  name: cloud-native-82265640-configmap
+  namespace: "82265640"
 resources:
 - ../../base
 - pvc.yaml
@@ -12,5 +13,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namePrefix: prod-
 images:
-- name: cepgstapacr.azurecr.io/cloud-sample
+- name: cepgstapacr.azurecr.io/cloud-native-82265640
   newTag: "202408120727"
