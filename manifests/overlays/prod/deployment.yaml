@@ -23,7 +23,7 @@ spec:
       volumes:
       - name: cloud-native-82265640-volume
         persistentVolumeClaim:
-          claimName: cepg-aa-std-pvc
+          claimName: cepg-aa-std-82265640-pvc
       - name: application-properties
         configMap:
           name: cloud-native-82265640-configmap
