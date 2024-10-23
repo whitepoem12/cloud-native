@@ -31,13 +31,13 @@
 	</properties>
 	<repositories>
 		<repository>
-		<id>github2</id>
+		<id>github</id>
 		<url>https://maven.pkg.github.com/whitepoem12/cloud-native-82265640</url>
 		</repository>
 	</repositories>
 	<distributionManagement>
 		<repository>
-		<id>github2</id>
+		<id>github</id>
 		<name>GitHub axccoe Apache Maven Packages</name>
 		<url>https://maven.pkg.github.com/whitepoem12/cloud-native-82265640</url>
 		</repository>
@@ -104,9 +104,15 @@
                     <image>
                         <name>cepgstapacr.azurecr.io/cloud-native-82265640</name>
                     </image>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
                 </configuration>
 			</plugin>
-			 <plugin>
+<!--			 <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
@@ -118,6 +124,7 @@
                     </excludes>
                 </configuration>
             </plugin>
+-->
 		</plugins>
 	</build>
 
